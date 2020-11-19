@@ -39,7 +39,7 @@ Traduzindo literalmente, o *push* é uma ação de empurrar o código commitado 
 O *pull* faz o contrário do push. Ele traz para o seu repositório local, todas as atualizações do seu projeto que está no repositório remoto. Ele faz dois procedimentos automáticos: *fetch + merge*. Ele verifica se tem commits anteriores e em seguida une as atualizações a sua versão atual, deixando ela atualizada. 
 
 #### Fazendo um pull 
-`git pull --all`
+`git pull origin nomeDaBranch`
 
 ### Git Merge
 Se você for fã de quadrinhos como eu vai se lembrar da fusão de Gothen e Tranks. Pois bem, o merge é a mesma coisa. Ele 'funde' as *branchs* ao projeto principal. Fazendo assim um único projeto. Normalmente uma Merge é realizada depois de alguns Pull Requestes e de Codes Reviews. 
