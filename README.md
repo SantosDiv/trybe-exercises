@@ -1,5 +1,5 @@
 ![](trybe-logo.png)
-# Trybe - Escola de Desenvolvimento
+# Trybe - Escola de Desenvolvimento de Softwere
 A Trybe é a escola que se compromete integralmente com o sucesso do e acelera a sua carreira em aproximadamente 12 meses.
 
 ## Currículo
