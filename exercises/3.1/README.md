@@ -9,12 +9,12 @@ O corpo padrão do HTML é composto por uma **head** (Cabeça da página, onde s
 ## Exercício 3.1 - Objetivo
 Neste exercíco, foi feito uma simples página de estruturação HTML, contendo as tags: 
 <ol>
-    <li> **h1** - Tag hierárquica de títulos (quanto maior o número do H, menor o texto)</li>
-    <li> **p** - Tag de parágrafo</li>
-    <li> **a** - Tag de link</li>
-    <li> **ul** - Tag de lista não ordenada (unordered). Exite a lista ordenada (ordered) - ol</li>
-    <li> **li** - Tag que determina o item da lista</li>
-    <li> **img** - Tag para a adição das imagens</li>
+    <li> <strong>h1</strong> - Tag hierárquica de títulos (quanto maior o número do H, menor o texto)</li>
+    <li> <strong>p </strong>- Tag de parágrafo</li>
+    <li> <strong>a </strong>- Tag de link</li>
+    <li> <strong>ul</strong> - Tag de lista não ordenada (unordered). Exite a lista ordenada (ordered) - ol</li>
+    <li> <strong>li</strong> - Tag que determina o item da lista</li>
+    <li> <strong>img</strong> - Tag para a adição das imagens</li>
 </ol>
 
 ## Particularidades de algumas tags
