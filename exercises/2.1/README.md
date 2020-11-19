@@ -1,3 +1,4 @@
+![](github_logo.png)
 # Git & Github - O que é e para que serve?
 **Git** "é um controle de versão distribuído(VCD), que foi desenvolvido com o intuito de facilitar o gerenciamento de versões de arquivos" (*Eduardo Espinula - Devmedia*);
 
@@ -54,8 +55,10 @@ Está parte é legal, é onde você irá colocar o seu email e senha do git. *N�
     git config --global user.email "seuemail@exemplo.com"
  ```
  - Verificando se tudo foi instalado
+
  Agora para você garantir que tudo está instalado, basta digitar o seginte comando no seu terminal: 
- `git --version` Se aparecer a versão, deu certo :) 
+
+ `git --version` Se aparecer a versão, deu certo :) <br>
  `git config --list` Se aparacer a o seu usuário e seu email cadastrado, também deu certo :)
 
 
