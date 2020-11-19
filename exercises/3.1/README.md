@@ -28,3 +28,11 @@ Neste exercíco, foi feito uma simples página de estruturação HTML, contendo 
 
 - **Tag a** <br>
     A tag a, que é a tag de link, precisa de um parâmetro chamado **href**, nele é colocado o caminho, para onde você deseja que seu link te leve. Pode ser um link externo (https://google.com.br), ou um diretório local(assets/envia.html).
+
+    `<a href = "urlDapágina ou do Diretório">`
+
+    *Observações*
+
+    Você pode usar no href o 'ID' da sua tag, para que esse seu link leve para uma seção da sua página.
+
+    `<a href = "#IdDaSuaTag">`
