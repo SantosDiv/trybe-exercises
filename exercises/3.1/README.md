@@ -1,4 +1,4 @@
-![](html-logo.jpeg)
+<div style= "align-text: center">![](html-logo.jpeg)</div>
 # HTML - Estruturando uma página
 O HTML é uma **linguagem de marcação** criada para estruturar a página web. Ela não é uma linguagem de programação. Imagine-a como um esqueleto do corpo humano, onde os músculos, pele, orgãos, serão sustentados e marcados por ela. 
 
