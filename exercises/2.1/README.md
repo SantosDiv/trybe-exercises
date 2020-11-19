@@ -18,8 +18,22 @@ Podemos ter uma "branch" de features/updates ou bugs-resolve. Cada profissional 
 ### Commits
 Como falado anteriormente, os commits são as pequenas atualizações dos arquivos, que precisam ser versionadas.
 
+#### Fazendo um Commit
+`git commit -m "Mensagem que identifica o commit"`
+
+#### Fazendo um commit e uma adição
+
+Toda vez que criamos uma alteração no nosso arquivo, precisamos adicionar este arquivo em um campo chamado *Stage*. Que basicamente é onde ele estaria pronto para ser 'commitado'. Basta realizar o comando `git add nomeDoAruqivo` ou `git add .` (Para adicionar todas as mudanças de uma vez)
+
+`git commit -am "Mensagem que identifica o commit"` - Com esse comando, podemos commitar e adcionar ao mesmo tempo. Atenção: Só pode fazer este comando após termos adicionado o arquivo uma primeira vez na forma anterior.
+
 ### Git Push
 Traduzindo literalmente, o *push* é uma ação de empurrar o código commitado pra o repositório remoto. Todas as alterações, de adição ou exclusão feita no seu repositório local, será 'empurrada' para o seu repositório remoto. 
+
+#### Fazendo um Push
+`git push -u origin NomeDaBranch` - O primeiro push na branch deve ser feito dessa forma. Os demais pode ser usado só o `git push`;
+
+
 
 ### Git Pull
 O *pull* faz o contrário do push. Ele traz para o seu repositório local, todas as atualizações do seu projeto que está no repositório remoto. Ele faz dois procedimentos automáticos: *fetch + merge*. Ele verifica se tem commits anteriores e em seguida une as atualizações a sua versão atual, deixando ela atualizada. 
