@@ -2,7 +2,7 @@
 # Git & Github - O que é e para que serve?
 **Git** "é um controle de versão distribuído(VCD), que foi desenvolvido com o intuito de facilitar o gerenciamento de versões de arquivos" (*Eduardo Espinula - Devmedia*);
 
-Ele foi criado pelo Linux trovel, durante a criação do próprio Linux. Este VCD guarda um conjunto de alterações do seu arquivo denominado de *commits*. Este por sua vez, é armazenado como um histórico dentro do seu repositório versionado, que possibilita gerenciar e acessar as diferentes versões do seu projeto.
+Ele foi criado pelo Linus Torvalds, durante a criação do próprio Linux. Este VCD guarda um conjunto de alterações do seu arquivo denominado de *commits*. Este por sua vez, é armazenado como um histórico dentro do seu repositório versionado, que possibilita gerenciar e acessar as diferentes versões do seu projeto.
 
 O Git te ajuda a trabalhar em equipe pois ele te possibilita ter várias estações de trabalho trabalhando no mesmo arquivo, ao mesmo tempo. Assim o fluxo de trabalho para desenvolvimento de softwere, texto, entre outros, fica extremamente fácil e muito mais acertivo. Sem a infame necessidade de envio dos arquivos em .zip por email com o título: *versao1, versao2, versao-final*.
 
