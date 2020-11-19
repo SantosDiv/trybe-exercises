@@ -38,14 +38,26 @@ Traduzindo literalmente, o *push* é uma ação de empurrar o código commitado 
 ### Git Pull
 O *pull* faz o contrário do push. Ele traz para o seu repositório local, todas as atualizações do seu projeto que está no repositório remoto. Ele faz dois procedimentos automáticos: *fetch + merge*. Ele verifica se tem commits anteriores e em seguida une as atualizações a sua versão atual, deixando ela atualizada. 
 
+#### Fazendo um pull 
+`git pull --all`
+
 ### Git Merge
 Se você for fã de quadrinhos como eu vai se lembrar da fusão de Gothen e Tranks. Pois bem, o merge é a mesma coisa. Ele 'funde' as *branchs* ao projeto principal. Fazendo assim um único projeto. Normalmente uma Merge é realizada depois de alguns Pull Requestes e de Codes Reviews. 
+
+#### Fazendo uma merge
+`git merge nomeDaBranchPrincipal` - É importante dizer que precisa fazer um checkout na branch
+
+- Checkout é a forma de dizer que estamos mudando de branch. Para isso, use:
+
+`git checkout nomeDaBranch` 
 
 ### Pull Requests
 São atualizações realizadas no código, e que são necessárias de averiguações, para que quando aprovadas serem mescladas ao projeto principal. É necessário sempre realizar pull requests para as suas atualizações e code review. Pois assim se garante uma segurança maior na hora de enviar o seu projeto para a produção. 
 
 ### Git Clone
 Como o próprio nome já diz, ele traz um clone do seu repositório remoto, para o seu repositório local. Podemos fazer a analogia, grosseiramente de um Download do projeto que está no repositório remoto. 
+
+`git clone urlOuSSHdoRepositório` 
 
 # Instalando e Configurando o Git
 Vamos agora instalar e configurar o git no seu computador, para você se deliciar e finalmente entrar no mundo o versionamento distribuído.
