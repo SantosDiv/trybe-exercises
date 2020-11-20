@@ -1,0 +1,27 @@
+body {
+    font-size: 16px;
+}
+.exercise-title{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    line-height: 50px;
+}
+.exercise-paragraph {
+    font-weight: 600;
+    font-size: 3rem;
+    font-style: italic;
+}
+.back-color-green {
+    background-color: #8b8bff;
+}
+
+.exercise-list li:nth-child(1){
+    background-color: yellow;
+}
+.exercise-list li:nth-child(2){
+    background-color: red;
+}
+.exercise-list li:nth-child(3){
+    background-color: brown;
+}
