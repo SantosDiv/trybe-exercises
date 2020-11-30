@@ -1,4 +1,4 @@
-let n = 5, cont = 0, divisor = (n-1)/2;
+let n = 11, cont = 0, divisor = (n-1)/2;
 if( n % 2 != 0) {
   for(let index = 0; index <= (divisor+cont)/2; index += 1) {
     let asterisco = '';
