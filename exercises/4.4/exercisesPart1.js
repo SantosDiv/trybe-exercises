@@ -7,7 +7,7 @@ let informations = {
 informations.recurrent = 'yes';
 
 for(key in informations) {
-    console.log(key);
+    console.log(informations[key]);
 }
-// console.log('Bem vindo,', informations.persona);
-// console.log(informations);
+// console.log('Bem vindo,', informations.persona); - item 1
+// console.log(informations); - item 2
