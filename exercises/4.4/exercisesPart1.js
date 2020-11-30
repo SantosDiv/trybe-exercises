@@ -6,5 +6,8 @@ let informations = {
 
 informations.recurrent = 'yes';
 
-console.log('Bem vindo,', informations.persona);
-console.log(informations);
+for(key in informations) {
+    console.log(key);
+}
+// console.log('Bem vindo,', informations.persona);
+// console.log(informations);
