@@ -86,7 +86,15 @@
             text.style.textTransform = 'uppercase';
         }
 
-        
+        //Exercício 06
+        function showContentPragraphConsole () {
+            let paragraphs = document.getElementsByTagName('p');
+            for (let paragraph of paragraphs) {
+                console.log(paragraph.innerText);
+            }
+        }
+        showContentPragraphConsole();
+
     </script>
   </body>
 </html>
