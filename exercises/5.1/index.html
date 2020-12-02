@@ -53,25 +53,40 @@
         */
 
         //Exercício 01
-        function changeText() {
+        function changeText () {
             let paragraph = document.getElementsByTagName('p')[1];
             paragraph.innerText = 'Ganhando 5000 reais e podendendo ser independente';
+            uppercaseText(paragraph);
         }
         changeText();
 
         //Exercício 02
-        function changeSquereColorGreen() {
+        function changeSquereColorGreen () {
             let squere = document.getElementsByClassName('main-content')[0];
             squere.style.backgroundColor = 'rgb(76,164,109)';
         }
-        changeSquereColorGreen();
+        changeSquereColorGreen ();
 
         //Exercício 03
-        function changeSquereColorWhite() {
+        function changeSquereColorWhite () {
             let squere = document.getElementsByClassName('center-content')[0];
             squere.style.backgroundColor = 'white';
         }
-        changeSquereColorWhite();
+        changeSquereColorWhite ();
+
+        //Exercício 04
+        function correctionText () {
+            let text = document.getElementsByTagName('h1')[0];
+            text.innerText = "Exercício 5.1 - JavaScript"
+        }
+        correctionText();
+
+        //Exercício 05
+        function uppercaseText (text) {
+            text.style.textTransform = 'uppercase';
+        }
+
+        
     </script>
   </body>
 </html>
