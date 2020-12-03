@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+        1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+        2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+        3. Crie uma função que mude a cor do quadrado vermelho para branco.
+        4. Crie uma função que corrija o texto da tag <h1>.
+        5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+
+        //Exercício 01
+        function changeText () {
+            let paragraph = document.getElementsByTagName('p')[1];
+            paragraph.innerText = 'Ganhando 5000 reais e podendendo ser independente';
+            uppercaseText(paragraph);
+        }
+        changeText();
+
+        //Exercício 02
+        function changeSquereColorGreen () {
+            let squere = document.getElementsByClassName('main-content')[0];
+            squere.style.backgroundColor = 'rgb(76,164,109)';
+        }
+        changeSquereColorGreen ();
+
+        //Exercício 03
+        function changeSquereColorWhite () {
+            let squere = document.getElementsByClassName('center-content')[0];
+            squere.style.backgroundColor = 'white';
+        }
+        changeSquereColorWhite ();
+
+        //Exercício 04
+        function correctionText () {
+            let text = document.getElementsByTagName('h1')[0];
+            text.innerText = "Exercício 5.1 - JavaScript"
+        }
+        correctionText();
+
+        //Exercício 05
+        function uppercaseText (text) {
+            text.style.textTransform = 'uppercase';
+        }
+
+        //Exercício 06
+        function showContentPragraphConsole () {
+            let paragraphs = document.getElementsByTagName('p');
+            for (let paragraph of paragraphs) {
+                console.log(paragraph.innerText);
+            }
+        }
+        showContentPragraphConsole();
+
+    </script>
+  </body>
+</html>
