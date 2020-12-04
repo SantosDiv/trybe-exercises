@@ -152,3 +152,8 @@
     margin: 0px;
     padding: 10px 0;
   }
+
+  .selectionColorHolidays {
+    background-color: green;
+    color: white!important;
+  }
