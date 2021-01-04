@@ -77,12 +77,12 @@
         </div>
         <!-- State input -->
         <div class="line-content">
-          <select name="state" id="dropdown-state" required></select>
+          <select name="state" id="dropdown-state"></select>
           <label for="type-1">
-            <input type="radio" name="type-house" id="type-1" required /> Casa
+            <input type="radio" name="type-house" id="type-1" value="casa" required /> Casa
           </label>
           <label for="type-2">
-            <input type="radio" name="type-house" id="type-2" required />
+            <input type="radio" name="type-house" id="type-2" value="ap" required />
             Apartamento
           </label>
         </div>
@@ -143,7 +143,7 @@
         </div>
       </fieldset>
       <div class="buttons-content">
-        <button type="submit" id="send" class="button">Enviar</button>
+        <button id="send" class="button">Enviar</button>
         <button type="reset" id="clear-form" class="button">Limpar dados</button>
       </div>
     </form>
