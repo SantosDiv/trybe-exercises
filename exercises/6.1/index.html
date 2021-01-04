@@ -7,112 +7,147 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="" method="GET">
-      <fieldset name="data-inicials" class="fieldset">
+    <form action="" method="GET" class="form">
+      <fieldset name="data-inicials" class="box-content">
         <legend>Dados iniciais</legend>
-        <label for="name-input">Nome:</label>
-        <input
-          type="text"
-          name="name"
-          id="name-input"
-          class="input"
-          placeholder="Digite seu nome"
-          required
-          maxlength="40"
-        />
-        <label for="email-input">Email:</label>
-        <input
-          type="email"
-          name="email"
-          id="email-input"
-          class="input"
-          placeholder="Digite seu email"
-          required
-          maxlength="50"
-        />
-        <label for="cpf-input">CPF:</label>
-        <input
-          type="text"
-          name="cpf"
-          id="cpf-input"
-          class="input"
-          placeholder="Digite seu cpf"
-          required
-          maxlength="11"
-        />
-        <label for="endereco-input">Endereço:</label>
-        <input
-          type="text"
-          name="endereco"
-          id="endereco-input"
-          class="input"
-          placeholder="Digite seu endereco"
-          required
-          maxlength="200"
-        />
-        <label for="cidade-input">Cidade:</label>
-        <input
-          type="text"
-          name="cidade"
-          id="cidade-input"
-          class="input"
-          placeholder="Digite seu cidade"
-          required
-          maxlength="11"
-        />
-        <select name="state" id="dropdown-state"></select>
-        <label for="type-1">
-          <input type="radio" name="type-house" id="type-1" required /> Casa
-        </label>
-        <label for="type-2">
-          <input type="radio" name="type-house" id="type-2" required />
-          Apartamento
-        </label>
+        <div class="line-content">
+          <!-- Name Input -->
+          <label for="name-input">Nome:</label>
+          <input
+            type="text"
+            name="name"
+            id="name-input"
+            class="input"
+            placeholder="Digite seu nome"
+            required
+            maxlength="40"
+          />
+        </div>
+        <!-- Email input -->
+        <div class="line-content">
+          <label for="email-input">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email-input"
+            class="input"
+            placeholder="Digite seu email"
+            required
+            maxlength="50"
+          />
+        </div>
+        <!-- CPF input -->
+        <div class="line-content">
+          <label for="cpf-input">CPF:</label>
+          <input
+            type="text"
+            name="cpf"
+            id="cpf-input"
+            class="input"
+            placeholder="Digite seu cpf"
+            required
+            maxlength="11"
+          />
+        </div>
+        <!-- Endereço input -->
+        <div class="line-content">
+          <label for="endereco-input">Endereço:</label>
+          <input
+            type="text"
+            name="endereco"
+            id="endereco-input"
+            class="input"
+            placeholder="Digite seu endereco"
+            required
+            maxlength="200"
+          />
+        </div>
+        <!-- Cidade input -->
+        <div class="line-content">
+          <label for="cidade-input">Cidade:</label>
+          <input
+            type="text"
+            name="cidade"
+            id="cidade-input"
+            class="input"
+            placeholder="Digite seu cidade"
+            required
+            maxlength="11"
+          />
+        </div>
+        <!-- State input -->
+        <div class="line-content">
+          <select name="state" id="dropdown-state" required></select>
+          <label for="type-1">
+            <input type="radio" name="type-house" id="type-1" required /> Casa
+          </label>
+          <label for="type-2">
+            <input type="radio" name="type-house" id="type-2" required />
+            Apartamento
+          </label>
+        </div>
       </fieldset>
-      <fieldset name="data-profissionals" class="fieldset">
-        <legend>Dado Profissionais</legend>
-        <p>Resumo do Currículo</p>
-        <textarea
-          name="resume"
-          id="resume-curriculum"
-          cols="30"
-          rows="10"
-          maxlength="1000"
-          placeholder="digite aqui..."
-        ></textarea>
-        <label for="cargo-input">Cargo:</label>
-        <input
-          type="text"
-          name="cargo"
-          id="cargo-input"
-          class="input"
-          placeholder="Digite seu cargo"
-          required
-          maxlength="40"
-        />
-        <textarea
-          name="description"
-          id="description"
-          cols="30"
-          rows="10"
-          maxlength="500"
-          placeholder="descreva o cargo"
-        ></textarea>
-        <label for="dataInicio-input">Data de início:</label>
-        <input
-          type="text"
-          name="dataInicio"
-          id="dataInicio-input"
-          class="input"
-          placeholder="00/00/0000"
-          required
-          maxlength="10"
-        />
+      <fieldset name="data-profissionals" class="box-content">
+        <legend>Dados Profissionais</legend>
+        <div class="line-content">
+          <p>Resumo do Currículo</p>
+          <textarea
+            name="resume"
+            id="resume-curriculum"
+            class="textarea"
+            cols="30"
+            rows="10"
+            maxlength="1000"
+            placeholder="digite aqui..."
+            required
+          ></textarea>
+        </div>
+        <!-- cargo input -->
+        <div class="line-content">
+          <label for="cargo-input">Cargo:</label>
+          <input
+            type="text"
+            name="cargo"
+            id="cargo-input"
+            class="input"
+            placeholder="Digite seu cargo"
+            required
+            maxlength="40"
+          />
+        </div>
+        <!-- Abstract input -->
+        <div class="line-content">
+          <textarea
+            name="description"
+            id="description"
+            class="textarea"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="descreva o cargo"
+            required
+          ></textarea>
+        </div>
+        <!-- Data input -->
+        <div class="line-content">
+          <label for="dataInicio-input">Data de início:</label>
+          <input
+            type="text"
+            name="dataInicio"
+            id="dataInicio-input"
+            class="input"
+            placeholder="00/00/0000"
+            required
+            maxlength="10"
+          />
+        </div>
       </fieldset>
-      <button type="submit" id="send" class="button">Enviar</button>
+      <div class="buttons-content">
+        <button type="submit" id="send" class="button">Enviar</button>
+        <button type="reset" id="clear-form" class="button">Limpar dados</button>
+      </div>
     </form>
-    <div class="curriculo" id="data-curriculo"></div>
-    <button id="clear-form" class="button">Limpar dados</button>
+    <div class="box-content" id="data-curriculo"></div>
     <script src="script.js"></script>
   </body>
 </html>
