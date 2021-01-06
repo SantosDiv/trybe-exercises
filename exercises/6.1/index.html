@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+    />
+    <link rel="stylesheet" href="./src/css/just-validadeTolltip.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   </head>
   <body>
-    <form action="" method="GET" class="form">
+    <form action="" method="GET" class="js-form" id="form">
       <fieldset name="data-inicials" class="box-content">
         <legend>Dados iniciais</legend>
         <div class="line-content">
@@ -19,8 +26,8 @@
             id="name-input"
             class="input"
             placeholder="Digite seu nome"
-            required
             maxlength="40"
+            data-validate-field="name"
           />
         </div>
         <!-- Email input -->
@@ -30,10 +37,10 @@
             type="email"
             name="email"
             id="email-input"
+            autocomplete="off"
             class="input"
             placeholder="Digite seu email"
-            required
-            maxlength="50"
+            data-validate-field="email"
           />
         </div>
         <!-- CPF input -->
@@ -45,8 +52,8 @@
             id="cpf-input"
             class="input"
             placeholder="Digite seu cpf"
-            required
             maxlength="11"
+            data-validate-field="myfield"
           />
         </div>
         <!-- Endereço input -->
@@ -58,8 +65,8 @@
             id="endereco-input"
             class="input"
             placeholder="Digite seu endereco"
-            required
             maxlength="200"
+            data-validate-field="endereco"
           />
         </div>
         <!-- Cidade input -->
@@ -71,18 +78,31 @@
             id="cidade-input"
             class="input"
             placeholder="Digite seu cidade"
-            required
             maxlength="11"
+            data-validate-field=""
           />
         </div>
         <!-- State input -->
         <div class="line-content">
           <select name="state" id="dropdown-state"></select>
           <label for="type-1">
-            <input type="radio" name="type-house" id="type-1" value="casa" required /> Casa
+            <input
+              type="radio"
+              name="type-house"
+              id="type-1"
+              value="casa"
+              data-validate-field="radio"
+            />
+            Casa
           </label>
           <label for="type-2">
-            <input type="radio" name="type-house" id="type-2" value="ap" required />
+            <input
+              type="radio"
+              name="type-house"
+              id="type-2"
+              value="ap"
+              data-validate-field="radio"
+            />
             Apartamento
           </label>
         </div>
@@ -99,7 +119,7 @@
             rows="10"
             maxlength="1000"
             placeholder="digite aqui..."
-            required
+            data-validate-field="text"
           ></textarea>
         </div>
         <!-- cargo input -->
@@ -111,7 +131,6 @@
             id="cargo-input"
             class="input"
             placeholder="Digite seu cargo"
-            required
             maxlength="40"
           />
         </div>
@@ -125,7 +144,6 @@
             rows="10"
             maxlength="500"
             placeholder="descreva o cargo"
-            required
           ></textarea>
         </div>
         <!-- Data input -->
@@ -134,20 +152,65 @@
           <input
             type="text"
             name="dataInicio"
-            id="dataInicio-input"
+            id="datepicker"
             class="input"
             placeholder="00/00/0000"
-            required
             maxlength="10"
           />
         </div>
       </fieldset>
       <div class="buttons-content">
-        <button id="send" class="button">Enviar</button>
-        <button type="reset" id="clear-form" class="button">Limpar dados</button>
+        <button type="submit" class="button" id="botao">Enviar</button>
+        <button type="reset" id="clear-form" class="button">
+          Limpar dados
+        </button>
       </div>
     </form>
     <div class="box-content" id="data-curriculo"></div>
     <script src="script.js"></script>
+    <script src="./src/js/just-validate.min.js"></script>
+    <script>
+      const validate = new window.JustValidate(".js-form", {
+        rules: {
+          checkebox: {
+            required: true,
+          },
+          endereco: {
+            required: true,
+          },
+          email: {
+            required: true,
+            email: true,
+          },
+          password: {
+            strength: {
+              default: true,
+            },
+          },
+          radio: {
+            required: true,
+          },
+        },
+        messages: {
+          name: {
+            minLength: "My custom message about only minLength rule",
+          },
+          email:
+            "My custom message about error (one error message for all rules)",
+        },
+
+        submitHandler: function (form, values, ajax) {
+          ajax({
+            url: "https://just-validate-api.herokuapp.com/submit",
+            method: "POST",
+            data: values,
+            async: true,
+            callback: function (response) {
+              console.log(response);
+            },
+          });
+        },
+      });
+    </script>
   </body>
 </html>
