@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+    />
+    <link rel="stylesheet" href="./src/css/just-validadeTolltip.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  </head>
+  <body>
+    <form action="" method="GET" class="js-form" id="form">
+      <fieldset name="data-inicials" class="box-content">
+        <legend>Dados iniciais</legend>
+        <div class="line-content">
+          <!-- Name Input -->
+          <label for="name-input">Nome:</label>
+          <input
+            type="text"
+            name="name"
+            id="name-input"
+            class="input"
+            placeholder="Digite seu nome"
+            maxlength="40"
+            data-validate-field="name"
+          />
+        </div>
+        <!-- Email input -->
+        <div class="line-content">
+          <label for="email-input">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email-input"
+            autocomplete="off"
+            class="input"
+            placeholder="Digite seu email"
+            data-validate-field="email"
+          />
+        </div>
+        <!-- CPF input -->
+        <div class="line-content">
+          <label for="cpf-input">CPF:</label>
+          <input
+            type="text"
+            name="cpf"
+            id="cpf-input"
+            class="input"
+            placeholder="Digite seu cpf"
+            maxlength="11"
+            data-validate-field="myfield"
+          />
+        </div>
+        <!-- Endereço input -->
+        <div class="line-content">
+          <label for="endereco-input">Endereço:</label>
+          <input
+            type="text"
+            name="endereco"
+            id="endereco-input"
+            class="input"
+            placeholder="Digite seu endereco"
+            maxlength="200"
+            data-validate-field="endereco"
+          />
+        </div>
+        <!-- Cidade input -->
+        <div class="line-content">
+          <label for="cidade-input">Cidade:</label>
+          <input
+            type="text"
+            name="cidade"
+            id="cidade-input"
+            class="input"
+            placeholder="Digite seu cidade"
+            maxlength="11"
+            data-validate-field=""
+          />
+        </div>
+        <!-- State input -->
+        <div class="line-content">
+          <select name="state" id="dropdown-state"></select>
+          <label for="type-1">
+            <input
+              type="radio"
+              name="type-house"
+              id="type-1"
+              value="casa"
+              data-validate-field="radio"
+            />
+            Casa
+          </label>
+          <label for="type-2">
+            <input
+              type="radio"
+              name="type-house"
+              id="type-2"
+              value="ap"
+              data-validate-field="radio"
+            />
+            Apartamento
+          </label>
+        </div>
+      </fieldset>
+      <fieldset name="data-profissionals" class="box-content">
+        <legend>Dados Profissionais</legend>
+        <div class="line-content">
+          <p>Resumo do Currículo</p>
+          <textarea
+            name="resume"
+            id="resume-curriculum"
+            class="textarea"
+            cols="30"
+            rows="10"
+            maxlength="1000"
+            placeholder="digite aqui..."
+            data-validate-field="text"
+          ></textarea>
+        </div>
+        <!-- cargo input -->
+        <div class="line-content">
+          <label for="cargo-input">Cargo:</label>
+          <input
+            type="text"
+            name="cargo"
+            id="cargo-input"
+            class="input"
+            placeholder="Digite seu cargo"
+            maxlength="40"
+          />
+        </div>
+        <!-- Abstract input -->
+        <div class="line-content">
+          <textarea
+            name="description"
+            id="description"
+            class="textarea"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="descreva o cargo"
+          ></textarea>
+        </div>
+        <!-- Data input -->
+        <div class="line-content">
+          <label for="dataInicio-input">Data de início:</label>
+          <input
+            type="text"
+            name="dataInicio"
+            id="datepicker"
+            class="input"
+            placeholder="00/00/0000"
+            maxlength="10"
+          />
+        </div>
+      </fieldset>
+      <div class="buttons-content">
+        <button type="submit" class="button" id="botao">Enviar</button>
+        <button type="reset" id="clear-form" class="button">
+          Limpar dados
+        </button>
+      </div>
+    </form>
+    <div class="box-content" id="data-curriculo"></div>
+    <script src="script.js"></script>
+    <script src="./src/js/just-validate.min.js"></script>
+    <script>
+      const validate = new window.JustValidate(".js-form", {
+        rules: {
+          checkebox: {
+            required: true,
+          },
+          endereco: {
+            required: true,
+          },
+          email: {
+            required: true,
+            email: true,
+          },
+          password: {
+            strength: {
+              default: true,
+            },
+          },
+          radio: {
+            required: true,
+          },
+        },
+        messages: {
+          name: {
+            minLength: "My custom message about only minLength rule",
+          },
+          email:
+            "My custom message about error (one error message for all rules)",
+        },
+
+        submitHandler: function (form, values, ajax) {
+          ajax({
+            url: "https://just-validate-api.herokuapp.com/submit",
+            method: "POST",
+            data: values,
+            async: true,
+            callback: function (response) {
+              console.log(response);
+            },
+          });
+        },
+      });
+    </script>
+  </body>
+</html>
