@@ -42,5 +42,7 @@ figure {
 } 
 
 @media screen and (min-width: 1300px) {
-    
+    body {
+        background-color: rgb(255, 255, 255);
+    }   
 }
