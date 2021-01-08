@@ -24,7 +24,7 @@ figure {
     margin: 10px;
 }
 
-@media screen and (min-width: 530px) and (max-width: 1010px) {
+@media screen and (min-width: 1000px) and (max-width: 1010px) {
     body {
         background-color: rgb(202, 201, 201);
         font-size: 16px;
@@ -33,5 +33,10 @@ figure {
     
     h1 {
         font-size: 2rem;
+    }
+
+    .box-imagens {
+        display: flex;
+        flex-wrap: wrap;
     }
 } 
