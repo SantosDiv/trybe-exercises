@@ -1,5 +1,5 @@
-# Media Queries
-Os **medias-queries** são pontos de quebras utilizadas para controlarmos a execução de um determinado trecho de código *css*, para diferentes dispositivos de tela. Com isso, podemos criar os famosos *designs responsivos*. Uma das formas de tornar o nosso site adaptável a vários tipos de dispositivos (Tablet, Desktop, Smartphone...).
+# Media Querys
+Os **medias-querys** são pontos de quebras utilizadas para controlarmos a execução de um determinado trecho de código *css*, para diferentes dispositivos de tela. Com isso, podemos criar os famosos *designs responsivos*. Uma das formas de tornar o nosso site adaptável a vários tipos de dispositivos (Tablet, Desktop, Smartphone...).
 
 ## Sintaxe
 ```sh
@@ -13,7 +13,7 @@ O parâmetro *'@media'* é a chamada do media-querie, em segundo vem o tipo de t
 
 Assim podemos controlar toda a nossa página e colocar quantos pontos de quebras acharmos necessários.
 
-## Media querie no html
+## Media Query no HTML
 Existe a possibilidade de utilizarmos o parâmetro *media* na propria tag HTML, quando chamamos o nosso CSS que contêm as mudanças que desejamos. Veja:
 ```sh
     <link rel="stylesheet" href="style.css">
