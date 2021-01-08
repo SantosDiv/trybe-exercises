@@ -24,7 +24,7 @@ figure {
     margin: 10px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1010px) {
+@media screen and (min-width: 1000px) {
     body {
         background-color: rgb(202, 201, 201);
         font-size: 16px;
