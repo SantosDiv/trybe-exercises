@@ -23,3 +23,7 @@ img {
 figure {
     margin: 10px;
 }
+
+@media screen and (min-width: 530px) and (max-width: 1010px) {
+    
+} 
