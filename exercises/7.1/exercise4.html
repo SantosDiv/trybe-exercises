@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Parte 2 (Bloco 7.1)</title>
+</head>
+<body>
+  <button id="buttonClick">Clique</button>
+  <h1 id="containerClicks"></h1>
+</body>
+
+<script>
+  const button = document.querySelector('#buttonClick');
+  const container = document.querySelector('#containerClicks');
+  let clickCount = 0;
+  button.addEventListener('click', (event) => {
+    container.innerHTML = clickCount += 1;
+  });
+</script>
+</html>
