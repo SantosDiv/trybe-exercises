@@ -97,7 +97,7 @@ Este método retorna também uma lista/array. Contudo contêm nele a lista do co
 ```
 A saída será dessa forma. **Exemplo em Tabela para melhor entendimento do chave/valor por posição**
 
-index     | 1          |2
+index     | 0          |1
 --------- | ------     | -------
 1         | firstName  | 'Diogenes'
 2         | secondName | 'Santos' 
