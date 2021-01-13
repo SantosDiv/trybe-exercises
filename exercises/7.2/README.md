@@ -105,4 +105,12 @@ index     | 0          |1
 4         | dateBirth  | '05/05/2000'
 5         | fullname   | function () {return `${this.firstName} ${this.secondName}`;}
 
+- Para que eu possa acessar as chaves/valor posso fazer: 
+```sh 
+    const keyValues = object.entries(profile);
+    keyValues.forEach((keyValue) => {
+        console.log('Chave', keyValues[keyValue][0]);
+        console.log('Valor', keyValues[keyValue][1]);
+    });
+```
 
