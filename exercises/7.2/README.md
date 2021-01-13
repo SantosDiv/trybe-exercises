@@ -114,3 +114,29 @@ index     | 0          |1
     });
 ```
 
+## Object.assign
+O método **Object.assign** serve para basicamente copiar os valores de um objeto **origem** para outro objeto **destino**.
+
+O que basicamente acontece? Ele cria um novo objeto, com a junção dos dois objetos (Origem e Destino).
+
+Temos algumas situações distintas, vamos tentar descrever algumas que acontecem aqui. 
+
+* Clonando o objeto Origem
+```sh 
+  const profile = {name: 'Diogenes'}; # Origem
+  const destinyObject = {};
+  Object.assign(destinyObject, profile);
+```
+Dessa forma eu to criando um objeto vazio e colocando nele todas as propriedades que estão no meu objeto profile.
+
+* Copiando e sob escrevendo propriedades já existentes
+Caso o meu objeto destino tenha uma propriedade com o mesmo nome do meu objeto origem, o valor dessa propriedade vai ser sobescrita pelo valor do meu objeto origem.
+```sh 
+  const profile = {name: 'Diogenes'}; # Origem
+  const destinyObject = {name: 'Felipe'};
+  console.log(Object.assign(destinyObject, profile));
+
+  # Output
+  # {name: "Diogenes"} - o name do meu objeto destinyObject foi sobescrito
+```
+
