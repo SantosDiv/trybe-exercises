@@ -81,4 +81,28 @@ Para acessar essa função é tão simples quanto a outra, basta apenas:
 ```
 Observe que a saída foi de todos os valores, inclusive o que estava dentro da chave `fullName`. Não foi retornado o nome completo, pois não foi chamada a função e sim  o valor da chave.
 
+## Object.entries
+Este método retorna também uma lista/array. Contudo contêm nele a lista do conjunto chave/valor em cada posição. Exemplo:
+```sh
+    const profile = {
+      firstName: 'Diogenes',
+      secondName: 'Santos',
+      age: 20,
+      dateBirth: '05/05/2000',
+      fullName: function () {
+        return `${this.firstName} ${this.secondName}`;
+      },
+    }
+    console.log(profile)
+```
+A saída será dessa forma. **Exemplo em Tabela para melhor entendimento do chave/valor por posição**
+
+(index)   |    1      |    2     
+--------- | -------     -------
+1         | firstName |'Diogenes'
+2         | secondName|'Santos'  
+3         | age       |20
+4         | dateBirth |'05/05/2000'
+5         | fullname  |function () {return `${this.firstName} ${this.secondName}`;
+      }
 
