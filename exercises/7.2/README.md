@@ -58,3 +58,27 @@ Mas para mostrar o nosso `fullname`, por ser uma função, eu preciso chama-la.
     profile.fullname();
     # Basta eu colocar os parênteses, que vai me retornar o valor final da função.
 ```
+## Object.values
+De forma análoga ao anterior, ele vai te retornar uma lista. A diferença é que será a lista dos valores das propriedades/chaves. 
+
+Para acessar essa função é tão simples quanto a outra, basta apenas:
+
+```sh
+    const profile = {
+      firstName: 'Diogenes',
+      secondName: 'Santos',
+      age: 20,
+      dateBirth: '05/05/2000',
+      fullName: function () {
+        return `${this.firstName} ${this.secondName}`;
+      },
+    }
+    console.log(object.values(profile));
+    # output
+    #['Diogenes', 'Santos', '20', '05/05/2000', 'function () {
+        #return `${this.firstName} ${this.secondName}`;
+      #}']
+```
+Observe que a saída foi de todos os valores, inclusive o que estava dentro da chave `fullName`. Não foi retornado o nome completo, pois não foi chamada a função e sim  o valor da chave.
+
+
