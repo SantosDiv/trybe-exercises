@@ -97,12 +97,12 @@ Este método retorna também uma lista/array. Contudo contêm nele a lista do co
 ```
 A saída será dessa forma. **Exemplo em Tabela para melhor entendimento do chave/valor por posição**
 
-(index)   |    1      |    2     
---------- | -------     -------
-1         | firstName |'Diogenes'
-2         | secondName|'Santos'  
-3         | age       |20
-4         | dateBirth |'05/05/2000'
-5         | fullname  |function () {return `${this.firstName} ${this.secondName}`;
-      }
+index     | 1          |2
+--------- | ------     | -------
+1         | firstName  | 'Diogenes'
+2         | secondName | 'Santos' 
+3         | age        | 20
+4         | dateBirth  | '05/05/2000'
+5         | fullname   | function () {return `${this.firstName} ${this.secondName}`;}
+
 
