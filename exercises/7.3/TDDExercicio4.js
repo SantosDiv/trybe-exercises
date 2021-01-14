@@ -1,6 +1,6 @@
 const assert = require('assert');
 // escreva a função findTheNeedle aqui
-const findTheNeedle = (words, param) => words.indexOf(param);
+const findTheNeedle = (words, word) => words.indexOf(word);
 
 
 let words = ['house', 'train', 'slide', 'needle', 'book'];
