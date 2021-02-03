@@ -1,4 +1,4 @@
-const { workDays, weekDays } = require('../matcherNot');
+const { workDays, weekDays } = require('../src/matcherNot');
 test('Sunday is a week day', () => {
     expect(weekDays).toContain('Sunday');
   });

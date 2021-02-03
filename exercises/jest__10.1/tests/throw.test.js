@@ -1,4 +1,4 @@
-const multiplyByTwo = require('../thorw');
+const multiplyByTwo = require('../src/thorw');
 
 test("testa se multiplyByTwo retorna o resultado da multiplicação", () => {
   expect(multiplyByTwo(4)).toBe(8);
