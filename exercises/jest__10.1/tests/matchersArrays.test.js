@@ -1,4 +1,4 @@
-const { workDays, weekDays } = require('../matcherNot');
+const { workDays, weekDays } = require('../src/matcherNot');
 
 // Verifica se contêm o item dentro do array em questão
 describe('Bloco do matcher toContain', () => {
