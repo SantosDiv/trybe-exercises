@@ -4,10 +4,12 @@ import data from './data';
 
 function App() {
   return (
-    <section>
+    <main className='main-container'>
       <h1>Pokedex</h1>
-      <Pokedex data = {data}/>
-    </section>
+      <section className='pokedex-section'>
+        <Pokedex data = {data}/>
+      </section>
+    </main>
   );
 }
 
