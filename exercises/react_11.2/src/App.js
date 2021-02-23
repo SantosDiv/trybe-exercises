@@ -7,7 +7,7 @@ function App() {
     <main className='main-container'>
       <h1>Pokedex</h1>
       <section className='pokedex-section'>
-        <Pokedex data = {data}/>
+        <Pokedex data = { data } />
       </section>
     </main>
   );

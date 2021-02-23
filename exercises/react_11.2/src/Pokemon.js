@@ -12,7 +12,7 @@ class Pokemon extends Component {
         </div>
 
         <div className='img-pokemon'>
-          <img src={image} alt='Pokemon Image'/>
+          <img src={ image } alt='Pokemon' />
         </div>
       </section>
     );

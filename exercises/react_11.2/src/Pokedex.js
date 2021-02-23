@@ -3,7 +3,7 @@ import Pokemon from './Pokemon';
 
 class Pokedex extends Component {
   render() {
-    return this.props.data.map(pokemonObj => <Pokemon obj = {pokemonObj} key= {pokemonObj.id}/>);
+    return this.props.data.map(pokemonObj => <Pokemon obj = {pokemonObj} key= {pokemonObj.id} />);
   }
 }
 
